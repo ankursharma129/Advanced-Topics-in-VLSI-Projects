@@ -24,7 +24,7 @@ initial begin
 end
 
 // DUT 
-  fibonacci_calculator2 U_Fibonacci_generator
+  fibonacci_calculator U_Fibonacci_generator
   (.input_s(INPUT_S),		 // inputs
    .reset  (RST_N),
    .clk    (CLK),
@@ -33,8 +33,8 @@ end
    .done   (DONE));
  
 initial begin
-//  $dumpfile("dump.vcd");
-//  $dumpvars;
+ $dumpfile("dump.vcd");
+ $dumpvars;
           INPUT_S = 5;
    #30ns  RST_N = 1;
    #10ns  RST_N = 0;
@@ -42,14 +42,47 @@ initial begin
    #10ns  START = 0;
           wait(DONE);
           display1;         // call task to check our work
-          INPUT_S = 20;
+          
+  		  INPUT_S = 3;
    #10ns  RST_N = 1;
    #10ns  RST_N = 0;
    #10ns  START = 1;
    #10ns  START = 0;
           wait(DONE);
-
+  		  display1;         // call task to check our work
+          
+  		  INPUT_S = 13;
+   #10ns  RST_N = 1;
+   #10ns  RST_N = 0;
+   #10ns  START = 1;
+   #10ns  START = 0;
+          wait(DONE);
+  		  display1;         // call task to check our work
+          
+  		  INPUT_S = 10;
+   #10ns  RST_N = 1;
+   #10ns  RST_N = 0;
+   #10ns  START = 1;
+   #10ns  START = 0;
+          wait(DONE);
    #10ns  display1;
+  
+  		  INPUT_S = 0;
+   #10ns  RST_N = 1;
+   #10ns  RST_N = 0;
+   #10ns  START = 1;
+   #10ns  START = 0;
+          wait(DONE);
+  		  display1;         // call task to check our work
+ 
+  	INPUT_S = 1;
+   #10ns  RST_N = 1;
+   #10ns  RST_N = 0;
+   #10ns  START = 1;
+   #10ns  START = 0;
+          wait(DONE);
+  		  display1;         // call task to check our work
+          
    #10ns  $stop;
 end
  
