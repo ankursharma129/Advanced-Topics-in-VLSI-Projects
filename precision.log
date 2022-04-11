@@ -1,0 +1,1099 @@
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+//  Precision RTL Synthesis 64-bit 2021.1.0.4 (Production Release) Tue Jul 20 01:22:31 PDT 2021
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2021, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@ed935fedf436 #121-Ubuntu SMP Thu Mar 24 16:04:27 UTC 2022 5.4.0-107-generic x86_64
+//  
+//  Start time Mon Apr 11 01:09:53 2022
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 8 logical processors.
+# Info: [15302]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15328]: Setting Part to: "7A100TCSG324".
+# Info: [15329]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3052]: Decompressing file : /usr/share/precision/Mgc_home/pkgs/psr/techlibs/xca7.syn in /home/runner/impl_1/synlib.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [645]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2021a.12
+# Info: [42003]: Starting analysis of files in library "work"
+# Info: [41002]: Analyzing input file "/home/runner/design.sv" ...
+# Info: [670]: Top module of the design is set to: fibonacci_calculator.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2021a.12
+# Info: [40000]: Last compiled on Jul  2 2021 08:23:33
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2021a.12
+# Info: [40000]: Last compiled on Jul  2 2021 08:49:53
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module fibonacci_calculator: Pre-processing...
+# Info: [45144]: Extracted FSM in module fibonacci_calculator, with state variable = status[1:0], async set/reset state(s) = (none), number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	          RESET	                                 00	                            00
+# Info: [40000]: FSM:	    1	          BEGIN	                                 01	                            01
+# Info: [40000]: FSM:	    2	        COMPUTE	                                 10	                            10
+# Info: [40000]: FSM:	    3	           DONE	                                 11	                            11
+# Info: [44523]: Root Module fibonacci_calculator: Compiling...
+# Info: [44838]: "/home/runner/design.sv", line 33: Macro Modgen_Counter "counter_dn_sload_clock_clk_en_cnt_en_0_5" inferred for node "input_r".
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 1, Inferred (Modgen/Selcounter/AddSub) : 1 (1 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+# Info: [44856]: Total lines of RTL compiled: 44.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [15334]: Doing rtl optimizations.
+# Info: [9028]: "/home/runner/design.sv", line 34: : Inferred selective adder Instance 'instance:ix644' of type 'cell:seladd_29_29_29_0_0'
+# Info: [671]: Finished compiling design.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [20013]: Precision will use 3 processor(s).
+# Info: [15002]: Optimizing design view:.work.fibonacci_calculator.INTERFACE
+# Info: [15002]: Optimizing design view:.work.fibonacci_calculator.INTERFACE
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:clk
+# Info: [1081]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: clk_PS		Clock Name: clk
+# Info: [3027]: Writing file: /home/runner/impl_1/fibonacci_calculator.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/fibonacci_calculator.xdc.
+# Info: -- Writing file /home/runner/impl_1/fibonacci_calculator.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/fibonacci_calculator.v.
+# Info: -- Writing file /home/runner/impl_1/fibonacci_calculator.tcl
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [671]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 1.5 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.9 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/fibonacci_calculator.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: ---------------------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/fibonacci_calculator_area.rep
+# Info: 1               /home/runner/impl_1/fibonacci_calculator_timing.rep
+# Info: 2               /home/runner/impl_1/fibonacci_calculator_violations.rep
+# Info: 3               /home/runner/impl_1/fibonacci_calculator_con_rep.sdc
+# Info: 4               /home/runner/impl_1/fibonacci_calculator_tech_con_rep.sdc
+# Info: 5               /home/runner/impl_1/fibonacci_calculator_fsm.rep
+# Info: 6               /home/runner/impl_1/fibonacci_calculator_dsp_modes.rep
+# Info: 7               /home/runner/impl_1/fibonacci_calculator_ram_modes.rep
+# Info: 8               /home/runner/impl_1/fibonacci_calculator_env.htm
+# Info: 9               /home/runner/impl_1/fibonacci_calculator.edf
+# Info: 10              /home/runner/impl_1/fibonacci_calculator.v
+# Info: 11              /home/runner/impl_1/fibonacci_calculator.xdc
+# Info: 12              /home/runner/impl_1/fibonacci_calculator.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               38      210      18.10%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              71      63400     0.11%
+# Info: CLB Slices                        14      15850     0.09%
+# Info: Dffs or Latches                   95      126800    0.07%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: ************************************************************************
+# Info: Library: work    Cell: fibonacci_calculator    View: INTERFACE
+# Info: ************************************************************************
+# Info:  Number of ports :                           38
+# Info:  Number of nets :                           276
+# Info:  Number of instances :                      268
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                 95
+# Info:  Number of LUTs :                            71
+# Info:  Number of Primitive LUTs :                  76
+# Info:  Number of LUTs with LUTNM/HLUTNM :          10
+# Info:  Number of MUX CARRYs :                      28
+# Info:  Number of accumulated instances :          268
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.fibonacci_calculator.INTERFACE
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | Port            | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | clk             | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | reset           | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | input_s(4)      | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | input_s(3)      | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | input_s(2)      | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | input_s(1)      | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | input_s(0)      | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | begin_fibo      | Input     |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(28)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(27)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(26)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(25)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(24)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(23)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(22)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(21)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(20)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(19)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(18)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(17)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(16)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(15)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(14)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(13)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(12)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(11)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(10)    | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(9)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(8)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(7)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(6)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(5)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(4)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(3)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(2)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(1)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | fibo_out(0)     | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: | done            | Output    |          |          |          |
+# Info: +-----------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 6.427):, Logic Levels = 2
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                   GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_status(1)/C     FDRE                  0.000   up
+# Info: reg_status(1)/Q     FDRE        0.496     0.496   up
+# Info: nx55886z3           (net)       1.114                  66     0
+# Info: ix50878z1315/I5     LUT6                  1.610   up
+# Info: ix50878z1315/O      LUT6        0.124     1.734   up
+# Info: nx50878z2           (net)       0.432                   8     1
+# Info: ix55813z1315/I3     LUT4                  2.166   up
+# Info: ix55813z1315/O      LUT4        0.124     2.290   dn
+# Info: nx55813z1           (net)       1.114                  58     2
+# Info: reg_next_num(28)/CE FDRE                  3.404   dn
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.169
+# Info: 		                        -----------
+# Info: 		Data required time:           9.831
+# Info: 		Data arrival time:       -    3.404   ( 21.86% cell delay, 78.14% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        6.427
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 6.427):, Logic Levels = 2
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                   GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_status(1)/C     FDRE                  0.000   up
+# Info: reg_status(1)/Q     FDRE        0.496     0.496   up
+# Info: nx55886z3           (net)       1.114                  66     0
+# Info: ix50878z1315/I5     LUT6                  1.610   up
+# Info: ix50878z1315/O      LUT6        0.124     1.734   up
+# Info: nx50878z2           (net)       0.432                   8     1
+# Info: ix55813z1315/I3     LUT4                  2.166   up
+# Info: ix55813z1315/O      LUT4        0.124     2.290   dn
+# Info: nx55813z1           (net)       1.114                  58     2
+# Info: reg_next_num(28)/CE FDRE                  3.404   dn
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.169
+# Info: 		                        -----------
+# Info: 		Data required time:           9.831
+# Info: 		Data arrival time:       -    3.404   ( 21.86% cell delay, 78.14% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        6.427
+# Info: Critical path #2, (path slack = 7.148):, Logic Levels = 2
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                                 GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: modgen_counter_input_r_reg_q(0)/C FDRE                  0.000   up
+# Info: modgen_counter_input_r_reg_q(0)/Q FDRE        0.496     0.496   up
+# Info: input_r(0)                        (net)       0.393                   6     0
+# Info: ix50878z1315/I4                   LUT6                  0.889   up
+# Info: ix50878z1315/O                    LUT6        0.124     1.013   dn
+# Info: nx50878z2                         (net)       0.432                   8     1
+# Info: ix55813z1315/I3                   LUT4                  1.445   dn
+# Info: ix55813z1315/O                    LUT4        0.124     1.569   up
+# Info: nx55813z1                         (net)       1.114                  58     2
+# Info: reg_next_num(28)/CE               FDRE                  2.683   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.169
+# Info: 		                        -----------
+# Info: 		Data required time:           9.831
+# Info: 		Data arrival time:       -    2.683   ( 27.73% cell delay, 72.27% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        7.148
+# Info: Critical path #3, (path slack = 7.163):, Logic Levels = 2
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                                 GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: modgen_counter_input_r_reg_q(1)/C FDRE                  0.000   up
+# Info: modgen_counter_input_r_reg_q(1)/Q FDRE        0.496     0.496   up
+# Info: input_r(1)                        (net)       0.378                   5     0
+# Info: ix50878z1315/I3                   LUT6                  0.874   up
+# Info: ix50878z1315/O                    LUT6        0.124     0.998   dn
+# Info: nx50878z2                         (net)       0.432                   8     1
+# Info: ix55813z1315/I3                   LUT4                  1.430   dn
+# Info: ix55813z1315/O                    LUT4        0.124     1.554   up
+# Info: nx55813z1                         (net)       1.114                  58     2
+# Info: reg_next_num(28)/CE               FDRE                  2.668   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.169
+# Info: 		                        -----------
+# Info: 		Data required time:           9.831
+# Info: 		Data arrival time:       -    2.668   ( 27.89% cell delay, 72.11% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        7.163
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: Critical path #1, (path slack = 6.427):, Logic Levels = 2
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                   GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_status(1)/C     FDRE                  0.000   up
+# Info: reg_status(1)/Q     FDRE        0.496     0.496   up
+# Info: nx55886z3           (net)       1.114                  66     0
+# Info: ix50878z1315/I5     LUT6                  1.610   up
+# Info: ix50878z1315/O      LUT6        0.124     1.734   up
+# Info: nx50878z2           (net)       0.432                   8     1
+# Info: ix55813z1315/I3     LUT4                  2.166   up
+# Info: ix55813z1315/O      LUT4        0.124     2.290   dn
+# Info: nx55813z1           (net)       1.114                  58     2
+# Info: reg_next_num(28)/CE FDRE                  3.404   dn
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.169
+# Info: 		                        -----------
+# Info: 		Data required time:           9.831
+# Info: 		Data arrival time:       -    3.404   ( 21.86% cell delay, 78.14% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        6.427
+# Info: Critical path #2, (path slack = 7.221):, Logic Levels = 30
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME                        GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_curr_num(0)/C        FDRE                  0.000   up
+# Info: reg_curr_num(0)/Q        FDRE        0.496     0.496   up
+# Info: curr_num(0)              (net)       0.354                   4     0
+# Info: ix789z1322/I0            LUT2                  0.850   up
+# Info: ix789z1322/O             LUT2        0.124     0.974   up
+# Info: nx789z2                  (net)       0.333                   1     1
+# Info: modgen_add_0_muxcy_0/DI  MUXCY                 1.307   up
+# Info: modgen_add_0_muxcy_0/O   MUXCY       0.029     1.336   up
+# Info: nx790z1                  (net)       0.000                   2     2
+# Info: modgen_add_0_muxcy_1/CI  MUXCY                 1.336   up
+# Info: modgen_add_0_muxcy_1/O   MUXCY       0.029     1.365   up
+# Info: nx791z1                  (net)       0.000                   2     3
+# Info: modgen_add_0_muxcy_2/CI  MUXCY                 1.365   up
+# Info: modgen_add_0_muxcy_2/O   MUXCY       0.029     1.394   up
+# Info: nx792z1                  (net)       0.000                   2     4
+# Info: modgen_add_0_muxcy_3/CI  MUXCY                 1.394   up
+# Info: modgen_add_0_muxcy_3/O   MUXCY       0.029     1.423   up
+# Info: nx793z1                  (net)       0.000                   2     5
+# Info: modgen_add_0_muxcy_4/CI  MUXCY                 1.423   up
+# Info: modgen_add_0_muxcy_4/O   MUXCY       0.029     1.452   up
+# Info: nx794z1                  (net)       0.000                   2     6
+# Info: modgen_add_0_muxcy_5/CI  MUXCY                 1.452   up
+# Info: modgen_add_0_muxcy_5/O   MUXCY       0.029     1.481   up
+# Info: nx795z1                  (net)       0.000                   2     7
+# Info: modgen_add_0_muxcy_6/CI  MUXCY                 1.481   up
+# Info: modgen_add_0_muxcy_6/O   MUXCY       0.029     1.510   up
+# Info: nx796z1                  (net)       0.000                   2     8
+# Info: modgen_add_0_muxcy_7/CI  MUXCY                 1.510   up
+# Info: modgen_add_0_muxcy_7/O   MUXCY       0.029     1.539   up
+# Info: nx797z1                  (net)       0.000                   2     9
+# Info: modgen_add_0_muxcy_8/CI  MUXCY                 1.539   up
+# Info: modgen_add_0_muxcy_8/O   MUXCY       0.029     1.568   up
+# Info: nx798z1                  (net)       0.000                   2    10
+# Info: modgen_add_0_muxcy_9/CI  MUXCY                 1.568   up
+# Info: modgen_add_0_muxcy_9/O   MUXCY       0.029     1.597   up
+# Info: nx1246z1                 (net)       0.000                   2    11
+# Info: modgen_add_0_muxcy_10/CI MUXCY                 1.597   up
+# Info: modgen_add_0_muxcy_10/O  MUXCY       0.029     1.626   up
+# Info: nx1247z1                 (net)       0.000                   2    12
+# Info: modgen_add_0_muxcy_11/CI MUXCY                 1.626   up
+# Info: modgen_add_0_muxcy_11/O  MUXCY       0.029     1.655   up
+# Info: nx1248z1                 (net)       0.000                   2    13
+# Info: modgen_add_0_muxcy_12/CI MUXCY                 1.655   up
+# Info: modgen_add_0_muxcy_12/O  MUXCY       0.029     1.684   up
+# Info: nx1249z1                 (net)       0.000                   2    14
+# Info: modgen_add_0_muxcy_13/CI MUXCY                 1.684   up
+# Info: modgen_add_0_muxcy_13/O  MUXCY       0.029     1.713   up
+# Info: nx1250z1                 (net)       0.000                   2    15
+# Info: modgen_add_0_muxcy_14/CI MUXCY                 1.713   up
+# Info: modgen_add_0_muxcy_14/O  MUXCY       0.029     1.742   up
+# Info: nx1251z1                 (net)       0.000                   2    16
+# Info: modgen_add_0_muxcy_15/CI MUXCY                 1.742   up
+# Info: modgen_add_0_muxcy_15/O  MUXCY       0.029     1.771   up
+# Info: nx1252z1                 (net)       0.000                   2    17
+# Info: modgen_add_0_muxcy_16/CI MUXCY                 1.771   up
+# Info: modgen_add_0_muxcy_16/O  MUXCY       0.029     1.800   up
+# Info: nx1253z1                 (net)       0.000                   2    18
+# Info: modgen_add_0_muxcy_17/CI MUXCY                 1.800   up
+# Info: modgen_add_0_muxcy_17/O  MUXCY       0.029     1.829   up
+# Info: nx1254z1                 (net)       0.000                   2    19
+# Info: modgen_add_0_muxcy_18/CI MUXCY                 1.829   up
+# Info: modgen_add_0_muxcy_18/O  MUXCY       0.029     1.858   up
+# Info: nx1255z1                 (net)       0.000                   2    20
+# Info: modgen_add_0_muxcy_19/CI MUXCY                 1.858   up
+# Info: modgen_add_0_muxcy_19/O  MUXCY       0.029     1.887   up
+# Info: nx2243z1                 (net)       0.000                   2    21
+# Info: modgen_add_0_muxcy_20/CI MUXCY                 1.887   up
+# Info: modgen_add_0_muxcy_20/O  MUXCY       0.029     1.916   up
+# Info: nx2244z1                 (net)       0.000                   2    22
+# Info: modgen_add_0_muxcy_21/CI MUXCY                 1.916   up
+# Info: modgen_add_0_muxcy_21/O  MUXCY       0.029     1.945   up
+# Info: nx2245z1                 (net)       0.000                   2    23
+# Info: modgen_add_0_muxcy_22/CI MUXCY                 1.945   up
+# Info: modgen_add_0_muxcy_22/O  MUXCY       0.029     1.974   up
+# Info: nx2246z1                 (net)       0.000                   2    24
+# Info: modgen_add_0_muxcy_23/CI MUXCY                 1.974   up
+# Info: modgen_add_0_muxcy_23/O  MUXCY       0.029     2.003   up
+# Info: nx2247z1                 (net)       0.000                   2    25
+# Info: modgen_add_0_muxcy_24/CI MUXCY                 2.003   up
+# Info: modgen_add_0_muxcy_24/O  MUXCY       0.029     2.032   up
+# Info: nx2248z1                 (net)       0.000                   2    26
+# Info: modgen_add_0_muxcy_25/CI MUXCY                 2.032   up
+# Info: modgen_add_0_muxcy_25/O  MUXCY       0.029     2.061   up
+# Info: nx2249z1                 (net)       0.000                   2    27
+# Info: modgen_add_0_muxcy_26/CI MUXCY                 2.061   up
+# Info: modgen_add_0_muxcy_26/O  MUXCY       0.029     2.090   up
+# Info: nx2250z1                 (net)       0.000                   2    28
+# Info: modgen_add_0_muxcy_27/CI MUXCY                 2.090   up
+# Info: modgen_add_0_muxcy_27/O  MUXCY       0.029     2.119   up
+# Info: nx52710z1                (net)       0.000                   1    29
+# Info: modgen_add_0_xorcy_28/CI XORCY                 2.119   up
+# Info: modgen_add_0_xorcy_28/O  XORCY       0.287     2.406   up
+# Info: curr_num_0n2ss1(28)      (net)       0.333                   1    30
+# Info: reg_curr_num(28)/D       FDRE                  2.739   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.040
+# Info: 		                        -----------
+# Info: 		Data required time:           9.960
+# Info: 		Data arrival time:       -    2.739   ( 62.76% cell delay, 37.24% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        7.221
+# Info: Critical path #3, (path slack = 8.672):, Logic Levels = 1
+# Info: SOURCE CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 1st rising edge
+# Info:   DEST CLOCK: name: clk period: 10.000000
+# Info:      Times are relative to the 2nd rising edge
+# Info: NAME               GATE      DELAY    ARRIVAL DIR  FANOUT LEVEL
+# Info: reg_done/C      FDRE                  0.000   up
+# Info: reg_done/Q      FDRE        0.496     0.496   up
+# Info: done_1_0        (net)       0.335                   2     0
+# Info: ix18351z4400/I1 LUT5                  0.831   up
+# Info: ix18351z4400/O  LUT5        0.124     0.955   up
+# Info: nx18351z1       (net)       0.333                   1     1
+# Info: reg_done/D      FDRE                  1.288   up
+# Info: 		Initial edge separation:     10.000
+# Info: 		Source clock delay:      -    2.148
+# Info: 		Dest clock delay:        +    2.148
+# Info: 		                        -----------
+# Info: 		Edge separation:             10.000
+# Info: 		Setup constraint:        -    0.040
+# Info: 		                        -----------
+# Info: 		Data required time:           9.960
+# Info: 		Data arrival time:       -    1.288   ( 48.14% cell delay, 51.86% net delay )
+# Info: 		                        -----------
+# Info: 		Slack:                        8.672
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: //
+# Info: // Verilog description for cell fibonacci_calculator,
+# Info: // Mon Apr 11 01:09:59 2022
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2021.1.0.4//
+# Info: module fibonacci_calculator ( clk, reset, input_s, begin_fibo, fibo_out, done
+# Info:                                ) ;
+# Info:     input clk ;
+# Info:     input reset ;
+# Info:     input [4:0]input_s ;
+# Info:     input begin_fibo ;
+# Info:     output [28:0]fibo_out ;
+# Info:     output done ;
+# Info:     wire [28:0]curr_num_0n2ss1;
+# Info:     wire nx790z1, nx791z1, nx792z1, nx793z1, nx794z1, nx795z1, nx796z1, nx797z1,
+# Info:          nx798z1, nx1246z1, nx1247z1, nx1248z1, nx1249z1, nx1250z1, nx1251z1,
+# Info:          nx1252z1, nx1253z1, nx1254z1, nx1255z1, nx2243z1, nx2244z1, nx2245z1,
+# Info:          nx2246z1, nx2247z1, nx2248z1, nx2249z1, nx2250z1, nx52710z1;
+# Info:     wire clk_int;
+# Info:     wire reset_int;
+# Info:     wire [4:0]input_s_int;
+# Info:     wire begin_fibo_int, nx58877z1, nx57880z1, nx56883z1, nx55886z1, nx47380z1,
+# Info:          nx51875z1, nx789z1, nx56883z2, nx55886z5, nx54889z1, nx54889z3,
+# Info:          nx23338z1, nx55813z1, nx845z1, nx54889z2, nx50878z1, nx55886z4,
+# Info:          nx55886z2, nx18351z1, nx50878z2, nx52710z2, nx2250z2, nx52709z1,
+# Info:          nx2249z2, nx52708z1, nx2248z2, nx52707z1, nx2247z2, nx52706z1, nx2246z2,
+# Info:          nx52705z1, nx2245z2, nx52704z1, nx2244z2, nx52703z1, nx2243z2,
+# Info:          nx52702z1, nx1255z2, nx51714z1, nx1254z2, nx51713z1, nx1253z2,
+# Info:          nx51712z1, nx1252z2, nx51711z1, nx1251z2, nx51710z1, nx1250z2,
+# Info:          nx51709z1, nx1249z2, nx51708z1, nx1248z2, nx51707z1, nx1247z2,
+# Info:          nx51706z1, nx1246z2, nx51705z1, nx798z2, nx59363z1, nx797z2, nx59364z1,
+# Info:          nx796z2, nx59365z1, nx795z2, nx59366z1, nx794z2, nx59367z1, nx793z2,
+# Info:          nx59368z1, nx792z2, nx59369z1, nx791z2, nx59370z1, nx790z2, nx59371z1,
+# Info:          nx789z2, nx59372z1, nx1282, done_1_0;
+# Info:     wire nx55886z3;
+# Info:     wire nx845z2;
+# Info:     wire [28:0]fibo_out_1_0;
+# Info:     wire [28:0]next_num;
+# Info:     wire [28:0]curr_num;
+# Info:     wire [4:0]input_r;
+# Info:     XORCY modgen_add_0_xorcy_0 (.O (curr_num_0n2ss1[0]), .CI (nx789z1), .LI (
+# Info:           nx59372z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_1 (.O (curr_num_0n2ss1[1]), .CI (nx790z1), .LI (
+# Info:           nx59371z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_2 (.O (curr_num_0n2ss1[2]), .CI (nx791z1), .LI (
+# Info:           nx59370z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_3 (.O (curr_num_0n2ss1[3]), .CI (nx792z1), .LI (
+# Info:           nx59369z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_4 (.O (curr_num_0n2ss1[4]), .CI (nx793z1), .LI (
+# Info:           nx59368z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_5 (.O (curr_num_0n2ss1[5]), .CI (nx794z1), .LI (
+# Info:           nx59367z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_6 (.O (curr_num_0n2ss1[6]), .CI (nx795z1), .LI (
+# Info:           nx59366z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_7 (.O (curr_num_0n2ss1[7]), .CI (nx796z1), .LI (
+# Info:           nx59365z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_8 (.O (curr_num_0n2ss1[8]), .CI (nx797z1), .LI (
+# Info:           nx59364z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_9 (.O (curr_num_0n2ss1[9]), .CI (nx798z1), .LI (
+# Info:           nx59363z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_10 (.O (curr_num_0n2ss1[10]), .CI (nx1246z1), .LI (
+# Info:           nx51705z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_11 (.O (curr_num_0n2ss1[11]), .CI (nx1247z1), .LI (
+# Info:           nx51706z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_12 (.O (curr_num_0n2ss1[12]), .CI (nx1248z1), .LI (
+# Info:           nx51707z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_13 (.O (curr_num_0n2ss1[13]), .CI (nx1249z1), .LI (
+# Info:           nx51708z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_14 (.O (curr_num_0n2ss1[14]), .CI (nx1250z1), .LI (
+# Info:           nx51709z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_15 (.O (curr_num_0n2ss1[15]), .CI (nx1251z1), .LI (
+# Info:           nx51710z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_16 (.O (curr_num_0n2ss1[16]), .CI (nx1252z1), .LI (
+# Info:           nx51711z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_17 (.O (curr_num_0n2ss1[17]), .CI (nx1253z1), .LI (
+# Info:           nx51712z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_18 (.O (curr_num_0n2ss1[18]), .CI (nx1254z1), .LI (
+# Info:           nx51713z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_19 (.O (curr_num_0n2ss1[19]), .CI (nx1255z1), .LI (
+# Info:           nx51714z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_20 (.O (curr_num_0n2ss1[20]), .CI (nx2243z1), .LI (
+# Info:           nx52702z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_21 (.O (curr_num_0n2ss1[21]), .CI (nx2244z1), .LI (
+# Info:           nx52703z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_22 (.O (curr_num_0n2ss1[22]), .CI (nx2245z1), .LI (
+# Info:           nx52704z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_23 (.O (curr_num_0n2ss1[23]), .CI (nx2246z1), .LI (
+# Info:           nx52705z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_24 (.O (curr_num_0n2ss1[24]), .CI (nx2247z1), .LI (
+# Info:           nx52706z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_25 (.O (curr_num_0n2ss1[25]), .CI (nx2248z1), .LI (
+# Info:           nx52707z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_26 (.O (curr_num_0n2ss1[26]), .CI (nx2249z1), .LI (
+# Info:           nx52708z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_27 (.O (curr_num_0n2ss1[27]), .CI (nx2250z1), .LI (
+# Info:           nx52709z1)) ;
+# Info:     XORCY modgen_add_0_xorcy_28 (.O (curr_num_0n2ss1[28]), .CI (nx52710z1), .LI (
+# Info:           nx52710z2)) ;
+# Info:     OBUF done_obuf (.O (done), .I (done_1_0)) ;
+# Info:     OBUF \fibo_out_obuf(0)  (.O (fibo_out[0]), .I (fibo_out_1_0[0])) ;
+# Info:     OBUF \fibo_out_obuf(1)  (.O (fibo_out[1]), .I (fibo_out_1_0[1])) ;
+# Info:     OBUF \fibo_out_obuf(2)  (.O (fibo_out[2]), .I (fibo_out_1_0[2])) ;
+# Info:     OBUF \fibo_out_obuf(3)  (.O (fibo_out[3]), .I (fibo_out_1_0[3])) ;
+# Info:     OBUF \fibo_out_obuf(4)  (.O (fibo_out[4]), .I (fibo_out_1_0[4])) ;
+# Info:     OBUF \fibo_out_obuf(5)  (.O (fibo_out[5]), .I (fibo_out_1_0[5])) ;
+# Info:     OBUF \fibo_out_obuf(6)  (.O (fibo_out[6]), .I (fibo_out_1_0[6])) ;
+# Info:     OBUF \fibo_out_obuf(7)  (.O (fibo_out[7]), .I (fibo_out_1_0[7])) ;
+# Info:     OBUF \fibo_out_obuf(8)  (.O (fibo_out[8]), .I (fibo_out_1_0[8])) ;
+# Info:     OBUF \fibo_out_obuf(9)  (.O (fibo_out[9]), .I (fibo_out_1_0[9])) ;
+# Info:     OBUF \fibo_out_obuf(10)  (.O (fibo_out[10]), .I (fibo_out_1_0[10])) ;
+# Info:     OBUF \fibo_out_obuf(11)  (.O (fibo_out[11]), .I (fibo_out_1_0[11])) ;
+# Info:     OBUF \fibo_out_obuf(12)  (.O (fibo_out[12]), .I (fibo_out_1_0[12])) ;
+# Info:     OBUF \fibo_out_obuf(13)  (.O (fibo_out[13]), .I (fibo_out_1_0[13])) ;
+# Info:     OBUF \fibo_out_obuf(14)  (.O (fibo_out[14]), .I (fibo_out_1_0[14])) ;
+# Info:     OBUF \fibo_out_obuf(15)  (.O (fibo_out[15]), .I (fibo_out_1_0[15])) ;
+# Info:     OBUF \fibo_out_obuf(16)  (.O (fibo_out[16]), .I (fibo_out_1_0[16])) ;
+# Info:     OBUF \fibo_out_obuf(17)  (.O (fibo_out[17]), .I (fibo_out_1_0[17])) ;
+# Info:     OBUF \fibo_out_obuf(18)  (.O (fibo_out[18]), .I (fibo_out_1_0[18])) ;
+# Info:     OBUF \fibo_out_obuf(19)  (.O (fibo_out[19]), .I (fibo_out_1_0[19])) ;
+# Info:     OBUF \fibo_out_obuf(20)  (.O (fibo_out[20]), .I (fibo_out_1_0[20])) ;
+# Info:     OBUF \fibo_out_obuf(21)  (.O (fibo_out[21]), .I (fibo_out_1_0[21])) ;
+# Info:     OBUF \fibo_out_obuf(22)  (.O (fibo_out[22]), .I (fibo_out_1_0[22])) ;
+# Info:     OBUF \fibo_out_obuf(23)  (.O (fibo_out[23]), .I (fibo_out_1_0[23])) ;
+# Info:     OBUF \fibo_out_obuf(24)  (.O (fibo_out[24]), .I (fibo_out_1_0[24])) ;
+# Info:     OBUF \fibo_out_obuf(25)  (.O (fibo_out[25]), .I (fibo_out_1_0[25])) ;
+# Info:     OBUF \fibo_out_obuf(26)  (.O (fibo_out[26]), .I (fibo_out_1_0[26])) ;
+# Info:     OBUF \fibo_out_obuf(27)  (.O (fibo_out[27]), .I (fibo_out_1_0[27])) ;
+# Info:     OBUF \fibo_out_obuf(28)  (.O (fibo_out[28]), .I (fibo_out_1_0[28])) ;
+# Info:     IBUF begin_fibo_ibuf (.O (begin_fibo_int), .I (begin_fibo)) ;
+# Info:     IBUF \input_s_ibuf(0)  (.O (input_s_int[0]), .I (input_s[0])) ;
+# Info:     IBUF \input_s_ibuf(1)  (.O (input_s_int[1]), .I (input_s[1])) ;
+# Info:     IBUF \input_s_ibuf(2)  (.O (input_s_int[2]), .I (input_s[2])) ;
+# Info:     IBUF \input_s_ibuf(3)  (.O (input_s_int[3]), .I (input_s[3])) ;
+# Info:     IBUF \input_s_ibuf(4)  (.O (input_s_int[4]), .I (input_s[4])) ;
+# Info:     IBUF reset_ibuf (.O (reset_int), .I (reset)) ;
+# Info:     LUT6 ix58877z45004 (.O (nx58877z1), .I0 (input_r[0]), .I1 (input_s_int[0]),
+# Info:          .I2 (nx55886z3), .I3 (nx845z2), .I4 (nx50878z2), .I5 (nx54889z2)) ;
+# Info:          defparam ix58877z45004.INIT = 64'hAEAAAC5AAAAAAAAA;
+# Info:     LUT6 ix57880z45004 (.O (nx57880z1), .I0 (input_r[1]), .I1 (input_r[0]), .I2 (
+# Info:          input_s_int[1]), .I3 (nx50878z2), .I4 (nx55886z2), .I5 (nx55886z4)) ;
+# Info:          defparam ix57880z45004.INIT = 64'hF8F9F0F08899AAAA;
+# Info:     LUT6 ix56883z18722 (.O (nx56883z1), .I0 (nx50878z2), .I1 (nx55886z2), .I2 (
+# Info:          nx55886z4), .I3 (nx56883z2), .I4 (input_r[2]), .I5 (input_s_int[2])) ;
+# Info:          defparam ix56883z18722.INIT = 64'hF3FFF4F003CF4400;
+# Info:     LUT6 ix55886z62754 (.O (nx55886z1), .I0 (nx50878z2), .I1 (nx55886z2), .I2 (
+# Info:          nx55886z4), .I3 (nx55886z5), .I4 (input_r[3]), .I5 (nx54889z3)) ;
+# Info:          defparam ix55886z62754.INIT = 64'hFF03F400FF03F000;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT2 ix47380z1325 (.O (nx47380z1), .I0 (curr_num[0]), .I1 (nx55886z3)) ;
+# Info:          defparam ix47380z1325.INIT = 4'hB;
+# Info:     GND ps_gnd (.G (nx789z1)) ;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT2 ix56883z1316 (.O (nx56883z2), .I0 (input_r[1]), .I1 (input_r[0])) ;
+# Info:          defparam ix56883z1316.INIT = 4'h1;
+# Info:     LUT6 ix55886z1317 (.O (nx55886z5), .I0 (input_r[3]), .I1 (input_r[2]), .I2 (
+# Info:          input_r[1]), .I3 (input_r[0]), .I4 (input_s_int[3]), .I5 (nx55886z3)) ;
+# Info:          defparam ix55886z1317.INIT = 64'hFFFDFFFDFFFF0000;
+# Info:     LUT6 ix54889z62994 (.O (nx54889z1), .I0 (nx54889z2), .I1 (nx54889z3), .I2 (
+# Info:          input_r[4]), .I3 (input_s_int[4]), .I4 (nx55886z3), .I5 (nx845z2)) ;
+# Info:          defparam ix54889z62994.INIT = 64'hF0F0FA507070F0F0;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT4 ix54889z1317 (.O (nx54889z3), .I0 (input_r[3]), .I1 (input_r[2]), .I2 (
+# Info:          input_r[1]), .I3 (input_r[0])) ;
+# Info:          defparam ix54889z1317.INIT = 16'h0001;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT2 ix23338z1322 (.O (nx23338z1), .I0 (curr_num[28]), .I1 (nx55886z3)) ;
+# Info:          defparam ix23338z1322.INIT = 4'h8;
+# Info:     LUT4 ix55813z1315 (.O (nx55813z1), .I0 (reset_int), .I1 (begin_fibo_int), .I2 (
+# Info:          nx845z2), .I3 (nx50878z2)) ;
+# Info:          defparam ix55813z1315.INIT = 16'h0001;
+# Info:     LUT4 ix845z1570 (.O (nx845z1), .I0 (reset_int), .I1 (begin_fibo_int), .I2 (
+# Info:          nx845z2), .I3 (nx50878z2)) ;
+# Info:          defparam ix845z1570.INIT = 16'h0100;
+# Info:     LUT2 ix54889z1316 (.O (nx54889z2), .I0 (reset_int), .I1 (begin_fibo_int)) ;
+# Info:          defparam ix54889z1316.INIT = 4'h1;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT4 ix50878z13652 (.O (nx50878z1), .I0 (nx50878z2), .I1 (reset_int), .I2 (
+# Info:          begin_fibo_int), .I3 (nx845z2)) ;
+# Info:          defparam ix50878z13652.INIT = 16'h3032;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT4 ix55886z1572 (.O (nx55886z4), .I0 (reset_int), .I1 (begin_fibo_int), .I2 (
+# Info:          nx55886z3), .I3 (nx845z2)) ;
+# Info:          defparam ix55886z1572.INIT = 16'h0100;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT4 ix55886z1331 (.O (nx55886z2), .I0 (reset_int), .I1 (begin_fibo_int), .I2 (
+# Info:          nx55886z3), .I3 (nx845z2)) ;
+# Info:          defparam ix55886z1331.INIT = 16'h0010;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT5 ix18351z4400 (.O (nx18351z1), .I0 (nx50878z2), .I1 (done_1_0), .I2 (
+# Info:          reset_int), .I3 (begin_fibo_int), .I4 (nx845z2)) ;
+# Info:          defparam ix18351z4400.INIT = 32'h0C0C0C0E;
+# Info:     LUT6 ix50878z1315 (.O (nx50878z2), .I0 (input_r[4]), .I1 (input_r[3]), .I2 (
+# Info:          input_r[2]), .I3 (input_r[1]), .I4 (input_r[0]), .I5 (nx55886z3)) ;
+# Info:          defparam ix50878z1315.INIT = 64'h0000000100000000;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT3 ix52710z1410 (.O (nx52710z2), .I0 (curr_num[28]), .I1 (next_num[28]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52710z1410.INIT = 8'h60;
+# Info:     LUT2 ix2250z1322 (.O (nx2250z2), .I0 (curr_num[27]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2250z1322.INIT = 4'h8;
+# Info:     LUT3 ix52709z1410 (.O (nx52709z1), .I0 (curr_num[27]), .I1 (next_num[27]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52709z1410.INIT = 8'h60;
+# Info:     LUT2 ix2249z1322 (.O (nx2249z2), .I0 (curr_num[26]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2249z1322.INIT = 4'h8;
+# Info:     LUT3 ix52708z1410 (.O (nx52708z1), .I0 (curr_num[26]), .I1 (next_num[26]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52708z1410.INIT = 8'h60;
+# Info:     LUT2 ix2248z1322 (.O (nx2248z2), .I0 (curr_num[25]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2248z1322.INIT = 4'h8;
+# Info:     LUT3 ix52707z1410 (.O (nx52707z1), .I0 (curr_num[25]), .I1 (next_num[25]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52707z1410.INIT = 8'h60;
+# Info:     LUT2 ix2247z1322 (.O (nx2247z2), .I0 (curr_num[24]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2247z1322.INIT = 4'h8;
+# Info:     LUT3 ix52706z1410 (.O (nx52706z1), .I0 (curr_num[24]), .I1 (next_num[24]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52706z1410.INIT = 8'h60;
+# Info:     LUT2 ix2246z1322 (.O (nx2246z2), .I0 (curr_num[23]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2246z1322.INIT = 4'h8;
+# Info:     LUT3 ix52705z1410 (.O (nx52705z1), .I0 (curr_num[23]), .I1 (next_num[23]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52705z1410.INIT = 8'h60;
+# Info:     LUT2 ix2245z1322 (.O (nx2245z2), .I0 (curr_num[22]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2245z1322.INIT = 4'h8;
+# Info:     LUT3 ix52704z1410 (.O (nx52704z1), .I0 (curr_num[22]), .I1 (next_num[22]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52704z1410.INIT = 8'h60;
+# Info:     LUT2 ix2244z1322 (.O (nx2244z2), .I0 (curr_num[21]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2244z1322.INIT = 4'h8;
+# Info:     LUT3 ix52703z1410 (.O (nx52703z1), .I0 (curr_num[21]), .I1 (next_num[21]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52703z1410.INIT = 8'h60;
+# Info:     LUT2 ix2243z1322 (.O (nx2243z2), .I0 (curr_num[20]), .I1 (nx55886z3)) ;
+# Info:          defparam ix2243z1322.INIT = 4'h8;
+# Info:     LUT3 ix52702z1410 (.O (nx52702z1), .I0 (curr_num[20]), .I1 (next_num[20]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix52702z1410.INIT = 8'h60;
+# Info:     LUT2 ix1255z1322 (.O (nx1255z2), .I0 (curr_num[19]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1255z1322.INIT = 4'h8;
+# Info:     LUT3 ix51714z1410 (.O (nx51714z1), .I0 (curr_num[19]), .I1 (next_num[19]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51714z1410.INIT = 8'h60;
+# Info:     LUT2 ix1254z1322 (.O (nx1254z2), .I0 (curr_num[18]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1254z1322.INIT = 4'h8;
+# Info:     LUT3 ix51713z1410 (.O (nx51713z1), .I0 (curr_num[18]), .I1 (next_num[18]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51713z1410.INIT = 8'h60;
+# Info:     LUT2 ix1253z1322 (.O (nx1253z2), .I0 (curr_num[17]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1253z1322.INIT = 4'h8;
+# Info:     LUT3 ix51712z1410 (.O (nx51712z1), .I0 (curr_num[17]), .I1 (next_num[17]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51712z1410.INIT = 8'h60;
+# Info:     LUT2 ix1252z1322 (.O (nx1252z2), .I0 (curr_num[16]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1252z1322.INIT = 4'h8;
+# Info:     LUT3 ix51711z1410 (.O (nx51711z1), .I0 (curr_num[16]), .I1 (next_num[16]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51711z1410.INIT = 8'h60;
+# Info:     LUT2 ix1251z1322 (.O (nx1251z2), .I0 (curr_num[15]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1251z1322.INIT = 4'h8;
+# Info:     LUT3 ix51710z1410 (.O (nx51710z1), .I0 (curr_num[15]), .I1 (next_num[15]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51710z1410.INIT = 8'h60;
+# Info:     LUT2 ix1250z1322 (.O (nx1250z2), .I0 (curr_num[14]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1250z1322.INIT = 4'h8;
+# Info:     LUT3 ix51709z1410 (.O (nx51709z1), .I0 (curr_num[14]), .I1 (next_num[14]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51709z1410.INIT = 8'h60;
+# Info:     LUT2 ix1249z1322 (.O (nx1249z2), .I0 (curr_num[13]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1249z1322.INIT = 4'h8;
+# Info:     LUT3 ix51708z1410 (.O (nx51708z1), .I0 (curr_num[13]), .I1 (next_num[13]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51708z1410.INIT = 8'h60;
+# Info:     LUT2 ix1248z1322 (.O (nx1248z2), .I0 (curr_num[12]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1248z1322.INIT = 4'h8;
+# Info:     LUT3 ix51707z1410 (.O (nx51707z1), .I0 (curr_num[12]), .I1 (next_num[12]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51707z1410.INIT = 8'h60;
+# Info:     LUT2 ix1247z1322 (.O (nx1247z2), .I0 (curr_num[11]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1247z1322.INIT = 4'h8;
+# Info:     LUT3 ix51706z1410 (.O (nx51706z1), .I0 (curr_num[11]), .I1 (next_num[11]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51706z1410.INIT = 8'h60;
+# Info:     LUT2 ix1246z1322 (.O (nx1246z2), .I0 (curr_num[10]), .I1 (nx55886z3)) ;
+# Info:          defparam ix1246z1322.INIT = 4'h8;
+# Info:     LUT3 ix51705z1410 (.O (nx51705z1), .I0 (curr_num[10]), .I1 (next_num[10]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix51705z1410.INIT = 8'h60;
+# Info:     LUT2 ix798z1322 (.O (nx798z2), .I0 (curr_num[9]), .I1 (nx55886z3)) ;
+# Info:          defparam ix798z1322.INIT = 4'h8;
+# Info:     LUT3 ix59363z1410 (.O (nx59363z1), .I0 (curr_num[9]), .I1 (next_num[9]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59363z1410.INIT = 8'h60;
+# Info:     LUT2 ix797z1322 (.O (nx797z2), .I0 (curr_num[8]), .I1 (nx55886z3)) ;
+# Info:          defparam ix797z1322.INIT = 4'h8;
+# Info:     LUT3 ix59364z1410 (.O (nx59364z1), .I0 (curr_num[8]), .I1 (next_num[8]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59364z1410.INIT = 8'h60;
+# Info:     LUT2 ix796z1322 (.O (nx796z2), .I0 (curr_num[7]), .I1 (nx55886z3)) ;
+# Info:          defparam ix796z1322.INIT = 4'h8;
+# Info:     LUT3 ix59365z1410 (.O (nx59365z1), .I0 (curr_num[7]), .I1 (next_num[7]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59365z1410.INIT = 8'h60;
+# Info:     LUT2 ix795z1322 (.O (nx795z2), .I0 (curr_num[6]), .I1 (nx55886z3)) ;
+# Info:          defparam ix795z1322.INIT = 4'h8;
+# Info:     LUT3 ix59366z1410 (.O (nx59366z1), .I0 (curr_num[6]), .I1 (next_num[6]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59366z1410.INIT = 8'h60;
+# Info:     LUT2 ix794z1322 (.O (nx794z2), .I0 (curr_num[5]), .I1 (nx55886z3)) ;
+# Info:          defparam ix794z1322.INIT = 4'h8;
+# Info:     LUT3 ix59367z1410 (.O (nx59367z1), .I0 (curr_num[5]), .I1 (next_num[5]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59367z1410.INIT = 8'h60;
+# Info:     LUT2 ix793z1322 (.O (nx793z2), .I0 (curr_num[4]), .I1 (nx55886z3)) ;
+# Info:          defparam ix793z1322.INIT = 4'h8;
+# Info:     LUT3 ix59368z1410 (.O (nx59368z1), .I0 (curr_num[4]), .I1 (next_num[4]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59368z1410.INIT = 8'h60;
+# Info:     LUT2 ix792z1322 (.O (nx792z2), .I0 (curr_num[3]), .I1 (nx55886z3)) ;
+# Info:          defparam ix792z1322.INIT = 4'h8;
+# Info:     LUT3 ix59369z1410 (.O (nx59369z1), .I0 (curr_num[3]), .I1 (next_num[3]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59369z1410.INIT = 8'h60;
+# Info:     LUT2 ix791z1322 (.O (nx791z2), .I0 (curr_num[2]), .I1 (nx55886z3)) ;
+# Info:          defparam ix791z1322.INIT = 4'h8;
+# Info:     LUT3 ix59370z1410 (.O (nx59370z1), .I0 (curr_num[2]), .I1 (next_num[2]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59370z1410.INIT = 8'h60;
+# Info:     LUT2 ix790z1322 (.O (nx790z2), .I0 (curr_num[1]), .I1 (nx55886z3)) ;
+# Info:          defparam ix790z1322.INIT = 4'h8;
+# Info:     LUT3 ix59371z1410 (.O (nx59371z1), .I0 (curr_num[1]), .I1 (next_num[1]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59371z1410.INIT = 8'h60;
+# Info:     LUT2 ix789z1322 (.O (nx789z2), .I0 (curr_num[0]), .I1 (nx55886z3)) ;
+# Info:          defparam ix789z1322.INIT = 4'h8;
+# Info:     LUT3 ix59372z1410 (.O (nx59372z1), .I0 (curr_num[0]), .I1 (next_num[0]), .I2 (
+# Info:          nx55886z3)) ;
+# Info:          defparam ix59372z1410.INIT = 8'h60;
+# Info:     BUFGP clk_ibuf (.O (clk_int), .I (clk)) ;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT4 ix51875z1320 (.O (nx51875z1), .I0 (nx845z2), .I1 (nx55886z3), .I2 (
+# Info:          begin_fibo_int), .I3 (reset_int)) ;
+# Info:          defparam ix51875z1320.INIT = 16'h0006;
+# Info:     VCC ps_vcc (.P (nx1282)) ;
+# Info:     FDRE reg_done (.Q (done_1_0), .C (clk_int), .CE (nx1282), .D (nx18351z1), .R (
+# Info:          nx789z1)) ;
+# Info:     FDRE \reg_status(1)  (.Q (nx55886z3), .C (clk_int), .CE (nx1282), .D (
+# Info:          nx51875z1), .R (nx789z1)) ;
+# Info:     FDRE \reg_status(0)  (.Q (nx845z2), .C (clk_int), .CE (nx1282), .D (
+# Info:          nx50878z1), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(28)  (.Q (fibo_out_1_0[28]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[28]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(27)  (.Q (fibo_out_1_0[27]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[27]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(26)  (.Q (fibo_out_1_0[26]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[26]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(25)  (.Q (fibo_out_1_0[25]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[25]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(24)  (.Q (fibo_out_1_0[24]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[24]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(23)  (.Q (fibo_out_1_0[23]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[23]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(22)  (.Q (fibo_out_1_0[22]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[22]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(21)  (.Q (fibo_out_1_0[21]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[21]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(20)  (.Q (fibo_out_1_0[20]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[20]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(19)  (.Q (fibo_out_1_0[19]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[19]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(18)  (.Q (fibo_out_1_0[18]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[18]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(17)  (.Q (fibo_out_1_0[17]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[17]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(16)  (.Q (fibo_out_1_0[16]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[16]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(15)  (.Q (fibo_out_1_0[15]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[15]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(14)  (.Q (fibo_out_1_0[14]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[14]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(13)  (.Q (fibo_out_1_0[13]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[13]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(12)  (.Q (fibo_out_1_0[12]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[12]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(11)  (.Q (fibo_out_1_0[11]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[11]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(10)  (.Q (fibo_out_1_0[10]), .C (clk_int), .CE (nx845z1)
+# Info:          , .D (curr_num[10]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(9)  (.Q (fibo_out_1_0[9]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[9]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(8)  (.Q (fibo_out_1_0[8]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[8]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(7)  (.Q (fibo_out_1_0[7]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[7]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(6)  (.Q (fibo_out_1_0[6]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[6]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(5)  (.Q (fibo_out_1_0[5]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[5]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(4)  (.Q (fibo_out_1_0[4]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[4]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(3)  (.Q (fibo_out_1_0[3]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[3]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(2)  (.Q (fibo_out_1_0[2]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[2]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(1)  (.Q (fibo_out_1_0[1]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[1]), .R (nx789z1)) ;
+# Info:     FDRE \reg_fibo_out(0)  (.Q (fibo_out_1_0[0]), .C (clk_int), .CE (nx845z1), .D (
+# Info:          curr_num[0]), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(28)  (.Q (next_num[28]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx23338z1), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(27)  (.Q (next_num[27]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2250z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(26)  (.Q (next_num[26]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2249z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(25)  (.Q (next_num[25]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2248z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(24)  (.Q (next_num[24]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2247z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(23)  (.Q (next_num[23]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2246z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(22)  (.Q (next_num[22]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2245z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(21)  (.Q (next_num[21]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2244z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(20)  (.Q (next_num[20]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx2243z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(19)  (.Q (next_num[19]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1255z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(18)  (.Q (next_num[18]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1254z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(17)  (.Q (next_num[17]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1253z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(16)  (.Q (next_num[16]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1252z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(15)  (.Q (next_num[15]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1251z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(14)  (.Q (next_num[14]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1250z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(13)  (.Q (next_num[13]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1249z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(12)  (.Q (next_num[12]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1248z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(11)  (.Q (next_num[11]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1247z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(10)  (.Q (next_num[10]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx1246z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(9)  (.Q (next_num[9]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx798z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(8)  (.Q (next_num[8]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx797z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(7)  (.Q (next_num[7]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx796z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(6)  (.Q (next_num[6]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx795z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(5)  (.Q (next_num[5]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx794z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(4)  (.Q (next_num[4]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx793z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(3)  (.Q (next_num[3]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx792z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(2)  (.Q (next_num[2]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx791z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(1)  (.Q (next_num[1]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx790z2), .R (nx789z1)) ;
+# Info:     FDRE \reg_next_num(0)  (.Q (next_num[0]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          nx47380z1), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(28)  (.Q (curr_num[28]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[28]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(27)  (.Q (curr_num[27]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[27]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(26)  (.Q (curr_num[26]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[26]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(25)  (.Q (curr_num[25]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[25]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(24)  (.Q (curr_num[24]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[24]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(23)  (.Q (curr_num[23]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[23]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(22)  (.Q (curr_num[22]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[22]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(21)  (.Q (curr_num[21]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[21]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(20)  (.Q (curr_num[20]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[20]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(19)  (.Q (curr_num[19]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[19]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(18)  (.Q (curr_num[18]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[18]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(17)  (.Q (curr_num[17]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[17]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(16)  (.Q (curr_num[16]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[16]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(15)  (.Q (curr_num[15]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[15]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(14)  (.Q (curr_num[14]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[14]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(13)  (.Q (curr_num[13]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[13]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(12)  (.Q (curr_num[12]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[12]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(11)  (.Q (curr_num[11]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[11]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(10)  (.Q (curr_num[10]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[10]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(9)  (.Q (curr_num[9]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[9]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(8)  (.Q (curr_num[8]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[8]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(7)  (.Q (curr_num[7]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[7]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(6)  (.Q (curr_num[6]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[6]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(5)  (.Q (curr_num[5]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[5]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(4)  (.Q (curr_num[4]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[4]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(3)  (.Q (curr_num[3]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[3]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(2)  (.Q (curr_num[2]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[2]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(1)  (.Q (curr_num[1]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[1]), .R (nx789z1)) ;
+# Info:     FDRE \reg_curr_num(0)  (.Q (curr_num[0]), .C (clk_int), .CE (nx55813z1), .D (
+# Info:          curr_num_0n2ss1[0]), .R (nx789z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDRE \modgen_counter_input_r_reg_q(4)  (.Q (input_r[4]), .C (clk_int), .CE (
+# Info:          nx1282), .D (nx54889z1), .R (nx789z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDRE \modgen_counter_input_r_reg_q(3)  (.Q (input_r[3]), .C (clk_int), .CE (
+# Info:          nx1282), .D (nx55886z1), .R (nx789z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDRE \modgen_counter_input_r_reg_q(2)  (.Q (input_r[2]), .C (clk_int), .CE (
+# Info:          nx1282), .D (nx56883z1), .R (nx789z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDRE \modgen_counter_input_r_reg_q(1)  (.Q (input_r[1]), .C (clk_int), .CE (
+# Info:          nx1282), .D (nx57880z1), .R (nx789z1)) ;
+# Info:     (* no_enable_dff = "TRUE" *)
+# Info:     FDRE \modgen_counter_input_r_reg_q(0)  (.Q (input_r[0]), .C (clk_int), .CE (
+# Info:          nx1282), .D (nx58877z1), .R (nx789z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_0 (.O (nx790z1), .CI (nx789z1), .DI (nx789z2), .S (
+# Info:           nx59372z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_1 (.O (nx791z1), .CI (nx790z1), .DI (nx790z2), .S (
+# Info:           nx59371z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_2 (.O (nx792z1), .CI (nx791z1), .DI (nx791z2), .S (
+# Info:           nx59370z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_3 (.O (nx793z1), .CI (nx792z1), .DI (nx792z2), .S (
+# Info:           nx59369z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_4 (.O (nx794z1), .CI (nx793z1), .DI (nx793z2), .S (
+# Info:           nx59368z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_5 (.O (nx795z1), .CI (nx794z1), .DI (nx794z2), .S (
+# Info:           nx59367z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_6 (.O (nx796z1), .CI (nx795z1), .DI (nx795z2), .S (
+# Info:           nx59366z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_7 (.O (nx797z1), .CI (nx796z1), .DI (nx796z2), .S (
+# Info:           nx59365z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_8 (.O (nx798z1), .CI (nx797z1), .DI (nx797z2), .S (
+# Info:           nx59364z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_9 (.O (nx1246z1), .CI (nx798z1), .DI (nx798z2), .S (
+# Info:           nx59363z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_10 (.O (nx1247z1), .CI (nx1246z1), .DI (nx1246z2),
+# Info:           .S (nx51705z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_11 (.O (nx1248z1), .CI (nx1247z1), .DI (nx1247z2),
+# Info:           .S (nx51706z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_12 (.O (nx1249z1), .CI (nx1248z1), .DI (nx1248z2),
+# Info:           .S (nx51707z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_13 (.O (nx1250z1), .CI (nx1249z1), .DI (nx1249z2),
+# Info:           .S (nx51708z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_14 (.O (nx1251z1), .CI (nx1250z1), .DI (nx1250z2),
+# Info:           .S (nx51709z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_15 (.O (nx1252z1), .CI (nx1251z1), .DI (nx1251z2),
+# Info:           .S (nx51710z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_16 (.O (nx1253z1), .CI (nx1252z1), .DI (nx1252z2),
+# Info:           .S (nx51711z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_17 (.O (nx1254z1), .CI (nx1253z1), .DI (nx1253z2),
+# Info:           .S (nx51712z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_18 (.O (nx1255z1), .CI (nx1254z1), .DI (nx1254z2),
+# Info:           .S (nx51713z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_19 (.O (nx2243z1), .CI (nx1255z1), .DI (nx1255z2),
+# Info:           .S (nx51714z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_20 (.O (nx2244z1), .CI (nx2243z1), .DI (nx2243z2),
+# Info:           .S (nx52702z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_21 (.O (nx2245z1), .CI (nx2244z1), .DI (nx2244z2),
+# Info:           .S (nx52703z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_22 (.O (nx2246z1), .CI (nx2245z1), .DI (nx2245z2),
+# Info:           .S (nx52704z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_23 (.O (nx2247z1), .CI (nx2246z1), .DI (nx2246z2),
+# Info:           .S (nx52705z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_24 (.O (nx2248z1), .CI (nx2247z1), .DI (nx2247z2),
+# Info:           .S (nx52706z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_25 (.O (nx2249z1), .CI (nx2248z1), .DI (nx2248z2),
+# Info:           .S (nx52707z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_26 (.O (nx2250z1), .CI (nx2249z1), .DI (nx2249z2),
+# Info:           .S (nx52708z1)) ;
+# Info:     MUXCY modgen_add_0_muxcy_27 (.O (nx52710z1), .CI (nx2250z1), .DI (nx2250z2)
+# Info:           , .S (nx52709z1)) ;
+# Info: endmodule
