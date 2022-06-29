@@ -1,0 +1,16 @@
+---
+:id: 127459564
+:submitters:
+- :name: Ishan Gupta
+  :email: igupta@ucsd.edu
+- :name: Ankur Sharma
+  :email: ankursharma@ucsd.edu
+- :name: Apurva Salvi
+  :email: asalvi@ucsd.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2022-05-29 04:51:10.509458000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2022-05-28 21:51:10.509458000 Z
+:status: processed
+:score: 100.0

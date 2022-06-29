@@ -1,0 +1,15 @@
+vlib work
+vlog  Integrator_gain_0_99.v
+vlog  current_previous.v
+vlog  Subsystem.v
+vlog  Step_Size_Adaptor1.v
+vlog  ADPCM_Decoder1.v
+vlog  Integrator_gain_0_99_block.v
+vlog  Subsystem_block.v
+vlog  current_previous_block.v
+vlog  Step_Size_Adaptor1_block.v
+vlog  ADPCM_Decoder.v
+vlog  Subsystem_block1.v
+vlog  adpcm_encoder2.v
+vlog  adpcm.v
+vlog  adpcm_tb.v

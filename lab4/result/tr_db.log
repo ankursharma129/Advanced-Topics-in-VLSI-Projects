@@ -1,0 +1,1 @@
+  CREATE_STREAM @0 {NAME:dc_seq T:Transactions SCOPE:uvm_test_top.dc_env.dc_agent.dc_seqr STREAM:597}

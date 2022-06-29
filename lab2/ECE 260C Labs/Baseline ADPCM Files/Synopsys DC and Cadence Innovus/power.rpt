@@ -1,0 +1,91 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2022-Apr-29 22:11:25 (2022-Apr-30 05:11:25 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: Subsystem
+*
+*	Liberty Libraries used: 
+*	        WC_VIEW: /home/linux/ieng6/ee260csp22/public/data/libraries/lib/tcbn65gplustc.lib
+*
+*	Power Domain used: 
+*
+*       Power View : WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:      114.31195684 	   49.3919%
+Total Switching Power:     116.99839570 	   50.5527%
+Total Leakage Power:         0.12831625 	    0.0554%
+Total Power:               231.43866904 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         19.65       1.338    0.008712          21       9.074 
+Macro                                  0           0           0           0           0 
+IO                                     0           0    1.53e-06    1.53e-06   6.611e-07 
+Combinational                      90.54       111.7      0.1183       202.3       87.43 
+Clock (Combinational)              4.114       3.981    0.001336       8.096       3.498 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              114.3         117      0.1283       231.4         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                     1      114.3         117      0.1283       231.4         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                                4.114       3.981    0.001336       8.096       3.498 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)       4.114       3.981    0.001336       8.096       3.498 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:   CTS_ccl_BUF_clk_G0_L1_2 (CKBD16): 	     1.975 
+* 		Highest Leakage Power:               FE_RC_229_0 (ND3D8): 	 0.0001468 
+* 		Total Cap: 	3.63e-11 F
+* 		Total instances in design:  5586
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

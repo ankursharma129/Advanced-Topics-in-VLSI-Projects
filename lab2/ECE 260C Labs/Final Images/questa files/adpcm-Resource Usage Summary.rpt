@@ -1,0 +1,81 @@
+Resource Usage Summary report for adpcm
+Sun May 01 03:37:17 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Resource Usage Summary
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++-----------------------------------------------+------------------+
+; Resource                                      ; Usage            ;
++-----------------------------------------------+------------------+
+; Estimated ALUTs Used                          ; 263              ;
+;     -- Combinational ALUTs                    ; 263              ;
+;     -- Memory ALUTs                           ; 0                ;
+;     -- LUT_REGs                               ; 0                ;
+; Dedicated logic registers                     ; 140              ;
+;                                               ;                  ;
+; Estimated ALUTs Unavailable                   ; 0                ;
+;     -- Due to unpartnered combinational logic ; 0                ;
+;     -- Due to Memory ALUTs                    ; 0                ;
+;                                               ;                  ;
+; Total combinational functions                 ; 263              ;
+; Combinational ALUT usage by number of inputs  ;                  ;
+;     -- 7 input functions                      ; 0                ;
+;     -- 6 input functions                      ; 32               ;
+;     -- 5 input functions                      ; 16               ;
+;     -- 4 input functions                      ; 39               ;
+;     -- <=3 input functions                    ; 176              ;
+;                                               ;                  ;
+; Combinational ALUTs by mode                   ;                  ;
+;     -- normal mode                            ; 132              ;
+;     -- extended LUT mode                      ; 0                ;
+;     -- arithmetic mode                        ; 114              ;
+;     -- shared arithmetic mode                 ; 17               ;
+;                                               ;                  ;
+; Estimated ALUT/register pairs used            ; 303              ;
+;                                               ;                  ;
+; Total registers                               ; 140              ;
+;     -- Dedicated logic registers              ; 140              ;
+;     -- I/O registers                          ; 0                ;
+;     -- LUT_REGs                               ; 0                ;
+;                                               ;                  ;
+;                                               ;                  ;
+; I/O pins                                      ; 36               ;
+;                                               ;                  ;
+; DSP block 18-bit elements                     ; 16               ;
+;                                               ;                  ;
+; Maximum fan-out node                          ; clk_enable~input ;
+; Maximum fan-out                               ; 141              ;
+; Total fan-out                                 ; 1566             ;
+; Average fan-out                               ; 3.18             ;
++-----------------------------------------------+------------------+
+
+
